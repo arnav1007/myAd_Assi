@@ -1,0 +1,120 @@
+/* src/components/Navbar.css */
+
+/* Overall Navbar Styling */
+.navbar {
+  width: 100%;
+  background-color: #1e5a99; /* Blue gradient background */
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo {
+  height: 40px; /* Adjust height for visual balance */
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect for Links */
+.nav-link:hover {
+  color: #f0e68c;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f0e68c;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Call-to-action Buttons */
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #1e3c72;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: #f0e68c; /* Light yellow for a bright and inviting effect */
+  color: #1e3c72;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #f0e68c;
+  color: #f0e68c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links, .navbar-buttons {
+    display: none;
+  }
+
+  /* Mobile Menu Button (Add an icon if needed) */
+  .navbar-menu {
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+}

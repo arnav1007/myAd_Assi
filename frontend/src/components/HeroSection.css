@@ -1,0 +1,144 @@
+/* src/components/HeroSection.css */
+
+/* Hero Section Background */
+.hero {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2e2f7e, #343a96); /* Gradient background */
+  background-image: url('../assets/bg2.jpg'); /* Optional: Add a subtle background texture */
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: #ffffff;
+}
+
+/* Content Wrapper */
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Subheading Styling */
+.hero-subheading {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+/* Main Heading Styling */
+.hero-heading {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding a subtle text shadow for depth */
+}
+
+/* Button Container */
+.hero-buttons {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Primary Button */
+.btn-primary {
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #2e2f7e;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: #e0e0e0;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #f0e68c;
+}
+
+/* Video Styling */
+.hero-video {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video-frame {
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adding a shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.2rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 10px 20px;
+  }
+
+  .video-frame {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* src/components/HeroSection.css */
+
+/* Video Styling */
+.hero-video {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video-frame {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adding a shadow for depth */
+}
+
+.hero-tagline {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+}

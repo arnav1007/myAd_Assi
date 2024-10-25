@@ -1,0 +1,90 @@
+/* src/components/Footer.css */
+
+/* Footer Background */
+.footer {
+    background-color: #1e5a99; /* Matching the navbar color */
+    padding: 60px 160px; /* Increased padding for more space, including left and right */
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 100%; /* Takes full width of the screen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    box-sizing: border-box; /* Ensure padding doesn't affect the total width */
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px; /* Reduced bottom margin for less gap between columns */
+  }
+  
+  .footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px; /* Reduced margin below headings */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-column p {
+    font-size: 0.9rem;
+    margin: 3px 0; /* Reduced margin between paragraphs */
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Footer Logo */
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo img {
+    height: 60px; /* Increased height for a more prominent logo */
+    margin-bottom: 5px; /* Reduced margin below the logo */
+  }
+  
+  .footer-logo p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 20px; /* Decreased gap between icons */
+    margin-top: 5px; /* Reduced margin above the icons */
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: #ffffff; /* White color */
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .social-icon:hover {
+    color: #f0e68c; /* Light yellow hover effect */
+    transform: scale(1.2); /* Slight scaling effect on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px; /* Adjusted padding for smaller screens */
+    }
+  
+    .footer-column {
+      text-align: center;
+      margin-bottom: 15px; /* Slightly increased margin for spacing between stacked columns */
+    }
+  
+    .footer-logo {
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,102 @@
+/* src/components/FeaturesSection.css */
+
+/* Features Section Background */
+.features {
+  background-color: #1e5a99; /* Matching the navbar background */
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Features Heading */
+.features-heading {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Features Subheading */
+.features-subheading {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Features Container */
+.features-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Individual Feature Card */
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hover Effect for Cards */
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Icon */
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+/* Feature Title */
+.feature-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1e5a99;
+}
+
+/* Feature Description */
+.feature-description {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .features-heading {
+    font-size: 2rem;
+  }
+
+  .features-subheading {
+    font-size: 1rem;
+  }
+}
